@@ -1,0 +1,133 @@
+============================================================================
+Beacons and Tracking Pixels
+
+    When to use:
+        Need to post data to another domain with no need for reply or acknowledgement (a.k.a. logging)  
+
+    An image reference does not have a limitations on domain access and does not use XHR, just like any DOM element with a src attribute
+
+    The source doesn't have to be an actual image 
+
+    Can be a service that does logging 
+
+    Should return a transparent 1px by 1px gif so some browsers don't show a broken link
+
+    Can just read web server logs to get values instead of manually logging
+
+============================================================================
+Server-Side Proxy
+
+    When to use:
+        Need to access a resource on another domain using XHR where you need to process the response
+        You want to sanitize or format the results before they are sent to the client 
+
+    Since XHR and JS can't call cross-domain, create a resource (service, page, etc.) on your site that makes the call server-side and does not have this limitation
+
+    Creates a server-side dependency to manage, version, and update along with either your web site or with the changing service
+
+    Extra network hop
+
+    Translating from client->server->client creates an impedance mismatch at times
+
+    It's simply plumbing, so it's wasted work when there are more appropriate implementations available
+
+============================================================================
+Dynamic Script Injection and JSONP (JSON with Padding)
+
+    When to use:
+        Don't have access to server-side of host
+        Don't want to have clients/users have to build a proxy
+        Want to encourage mash-ups and ease-of-use 
+         You TRUST the service provider
+
+    Script tags are designed to be included cross-domain, just like any other DOM element with a src attribute
+
+    Using server-side code, dynamically generate the JavaScript that gets loaded as the "static" script source 
+
+    Allow callers to specify arguments, including a callback
+
+    Heavily used by Yahoo!, Google, and many others
+
+    jQuery supports natively with $.getJSON('...&callback=?');
+
+============================================================================
+Using iframes to Display Content
+
+     When to use:
+        Federate your content/services across the web without requiring a server-to-server implementation
+        Desire light lift and easily usable by HTML n00b's, designers, and advanced developers!
+        Let's you as the service provider fully see the user (cookies, headers, etc.) and interact
+                                                            
+    Typically well-defined size of iframe in px
+    Can provide arguments to blend in seamlessly (colors, borders, JS resize)
+    Reputation: "Old School", "unsophisticated"
+ 
+Let's digress for a bit into the mythical land of iframes...                                                                            
+
+============================================================================
+Domain Lowering
+
+    When to use:
+        You have a site on a domain (or sub-domain) and you have a service on a sub-domain of that root domain that you want to scale separately from the web site
+        Want to maintain the security that XHR provides
+        As a fallback for older browsers without window.postMessage() support
+
+    JavaScript can call JavaScript functions defined in iframes that have the same document.domain
+    Browsers allow you to redefine document.domain, as long as it's a "lowered domain" (e.g., services.domain.com -> domain.com)
+    This lowering does NOT impact XHR objects, so you can still make XHR requests to services.domain.com, but the host site on domain.com can call the JavaScript that makes the XHR call!    EXCEPT OPERA!!
+
+============================================================================
+window.postMessage()
+HTML5: window.postMessage 
+(and new iframe attributes: sandbox, seamless)
+
+    When to use: 
+        Lightweight JavaScript interaction with hidden or visible iframes
+        Want to scale services separately from site but want XHR-type capability and security
+        You support mostly modern browsers
+
+    Only pass a string message with targetOrigin (* for all)
+
+    Receiver window/frame has an event listener for the 'message' event
+    Event has several properties: data, source, origin
+    Asynchronous messaging model
+        no return value
+        send response messages back to the event.source
+    Beware browser differences (but they are narrowing)
+
+============================================================================
+Cross-Domain JavaScript Cheat Sheet
+
+    Beacons/Tracking Pixels 
+        Send data cross-domain, one-way
+
+    Server-side proxy 
+        Need XHR to call and process response
+        Want to sanitize/format before sending to client 
+
+    JSONP
+        Trusted service
+        Can process raw response in JavaScript
+        You are using jQuery 
+
+    iframe Display of Content
+        Control UI / Support "embeddable" widgets
+        Interactivity with end user
+        Usually fixed size
+
+    iframe Location Communication
+        Minimal data passed one-way
+        May need an XD page on your site for the iframe to open an iframe for response passing
+ 
+    Domain Lowering
+        Only use as fallback for older browsers window.postMessage is not available AND
+        Services on domain/sub-domain that you control AND
+        Want to scale services separately from site but want XHR capability 
+
+    window.postMessage
+        Lightweight JavaScript interaction with hidden or visible iframes
+        Want to scale services separately from site but want XHR capability
+        Support modern browsers 
+        Will need fallback of Domain Lowering,  if you own domain, or iframe Location Communication XD page if you don't
+
+============================================================================
