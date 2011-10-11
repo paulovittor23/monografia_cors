@@ -1,0 +1,77 @@
+=======================================================================	
+Hypertext Transfer Protocol (HTTP)                                                                    
+                                                     
+DONE!
+=======================================================================	
+Navegadores web
+     
+DONE!
+=======================================================================	
+Javascript                                                              
+
+DONE!
+	===================================================================	
+	XMLHttpRequest
+    
+	DONE!
+	
+	[ ] XMLHttpRequest life cycle?? 
+	Securing Ajax Applications página 22.
+	
+    ===================================================================	
+	Same-Origin Policy	                                                	
+	                                                                   
+	DONE!
+	===================================================================
+	Same-Origin Policy para XMLHttpRequest
+                                          
+	DONE!
+=======================================================================	
+JavaScript Object Notation (JSON)                                                                    
+
+DONE!
+=======================================================================	
+JSONP                                                                   
+                
+DONE!
+=======================================================================	
+XML 
+
+DONE!
+=======================================================================
+Asynchronous Javascript And XML (AJAX)
+
+DONE!
+=======================================================================		
+Java                                                                    
+             
+DONE!
+	===================================================================	
+	JEE
+                            
+	DONE!
+	===================================================================	
+	Filtros       
+     
+	DONE!
+=======================================================================	
+Cross-site scripting (XSS)
+                          
+DONE!
+=======================================================================	
+Cross-site request forgery (CSRF/XSRF)                                  
+
+DONE!                  
+=======================================================================	
+                       
+When can I use Cross-Origin Resource Sharing?
+http://caniuse.com/cors
+                                               
+Client-side Cross-domain Security
+http://msdn.microsoft.com/library/cc709423.aspx
+                                   
+Browser Security Handbook
+http://code.google.com/p/browsersec     
+
+
+Figura 1. Exemplo de uma figura no texto. (RIBEIRO, 2006)
