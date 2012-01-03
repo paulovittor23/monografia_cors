@@ -1,0 +1,13 @@
+CHANGELOG:
+
+1 - Mudança do título da monografia.
+	De: COMUNICAÇÃO AJAX CROSS-DOMAIN UTILIZANDO O MECANISMO CROSS-ORIGIN RESOURCE SHARING
+	Para: CROSS-ORIGIN RESOURCE SHARING, A REVOLUÇÃO DO COMPARTILHAMENTO DE RECURSOS NO DESENVOLVIMENTO WEB
+
+	Motivo(s) da mudança: 
+	- Relacionar o tema do trabalho a uma área da Engenharia de Software;
+	- Tornar o tema mais atrativo para o leitor;
+	- Demonstrar a importância do tema.	
+	
+2 - 	
+
