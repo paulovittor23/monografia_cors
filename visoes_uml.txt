@@ -1,0 +1,20 @@
+1 Visão lógica
+	Diagrama de classe 				N/A	
+	
+	Diagrama de comunicação			N/A			
+	
+	Diagrama de sequência	       	OK
+
+2 Visão de implementação
+	Diagrama de componentes			N/A
+	
+	Diagrama de pacotes				N/A
+	
+3 Visão de processos
+	Diagrama de atividade			N/A			
+
+4 Visão física            
+	Diagrama de deployment			N/A
+	
++ 1 Cenários
+	

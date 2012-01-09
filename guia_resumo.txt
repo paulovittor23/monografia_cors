@@ -1,0 +1,47 @@
+RESUMO      
+                 
+O compartilhamento de recursos entre aplicações web, como web services, é uma prática de mercado cada vez mais adotada,  pois, além de permitir o reuso de serviços já construídos e consolidados, proporciona uma maior agilidade na criação de novas aplicações, conhecidas por aplicações Mashup. 
+
+Até os dias de hoje, devido a uma limitação de segurança dos navegadores web, conhecida por Same-Origin Police, as aplicações Mashup necessitavam fazer o consumo de serviços externos na sua camada servidor, concentrando todo o trabalho de agragação de conteúdo em uma única arquitetura física.
+
+O presente trabalho tem como objetivo apresentar, de forma abrangente e prática, a especificação do mecanismo de compartilhamento descentralizado, proposto pelo W3C, denominado Cross-Origin Resource Sharing. 
+
+Como resultado deste trabalho é esperado o desenvolvimento de um estudo de caso, capaz de comprovar o funcionamento deste novo mecanismo de compartilhamento. Por fim, com base nestes experimentos práticos, são elencados possíveis pontos de estudo futuro.
+
+O resumo não apresenta recuos e parágrafos, portanto trata-se de um texto corrido que aborda as principais partes de um trabalho científico: introdução (objeto de estudo, problema, tema, área e sub-área), objetivos (geral e específicos), justificativas, metodologia, resultados esperados ou finais e conclusões. Este resumo deve conter de 200 a 400 palavras de forma a indicar as idéias principais apresentadas no texto. O resumo não deve ser confundido com uma introdução do trabalho e muito menos conter abreviações, referências bibliográficas, figuras, etc. Na elaboração deste resumo, como também em todo o trabalho, deve ser utilizada a forma impessoal como, por exemplo, “... Os resultados experimentais mostraram que...” ao invés de “...os resultados que nós obtivemos mostraram que...”. Deve indicar os principais pontos do trabalho: objeto de estudo, problema, tema, objetivos, metodologia, resultados esperados ou obtidos, o valor científico do trabalho e sua originalidade. Deve ser seguido das palavras-chave, isto é, das palavras que mais representam o conteúdo do trabalho.
+
+
+Palavras-chave: Os autores devem apresentar um conjunto de no máximo 3 palavras-chave (em ordem alfabética) que possam identificar os principais tópicos abordados no trabalho.
+
+
+
+- introdução 
+	objeto de estudo
+	problema
+	tema
+	área e sub-área
+	
+- objetivos 
+	geral
+	específicos
+	
+- justificativas
+
+- metodologia
+
+- resultados esperados
+
+- conclusões      
+
+- palavras chave 
+
+200 a 400 palavras
+
+
+ABSTRACT
+
+The sharing of resources, like web services, between web applications is a increasingly accepted market practice, not just for allowing the reuse of already constructed and consolidated services, but also for providing greater productivity for create new applications, known as Mashup applications. Even today, due to a limitation of security of web browsers, known as Same-Origin Police, Mashup applications needed to make the use of external services on your server side, concentrating all the work of content aggregation into a single physic architecture.
+The present work has as objective to show, in a comprehensive and practice way, the specification of the sharing mechanism, proposed by the W3C Consortium, called Cross-Origin Resource Sharing. 
+As a result of this work is expected the development of a case study, able to demonstrate the operation of this new sharing mechanism. Finally, based on these experiments, are listed possible future studies.
+
+Palavras-chave: Compartilhamento, Cross-Origin Resource Sharing, Same-Origin-Police.
